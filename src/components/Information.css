@@ -1,0 +1,27 @@
+.Information-container {
+  width: 80%;
+  margin: 0px auto;
+  height: 0px auto;
+  padding: 50px 0;
+  text-align: left;
+}
+
+.Information-container h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.information-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.information-item p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
