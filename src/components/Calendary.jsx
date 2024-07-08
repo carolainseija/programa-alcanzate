@@ -11,7 +11,6 @@ export default function Calendary() {
             const calendaryData = await fetchCalendary();
             setCalendary(calendaryData);
         };
-
         getCalendaryData();
     }, []);
 

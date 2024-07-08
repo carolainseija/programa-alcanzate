@@ -1,4 +1,3 @@
-// import React from 'react';
 import './About.css';
 import ServiceCard from './ServiceCard';
 import logo from "../assets/logo-solo.png"
