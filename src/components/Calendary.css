@@ -1,0 +1,155 @@
+
+/* calendary-end */
+
+.calendary-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+    padding: 100px 0px;
+   }
+   
+   .calendary-text {
+     width: 50%;
+     margin: 0px auto;
+     padding: 50px 0;
+     text-align: left;
+   }
+   
+   .calendary-text h2 {
+     margin-top: 0px;
+     margin-bottom: 0px;
+     font-family: 'Libre Franklin', sans-serif;
+     color: #b3b3b3;
+     font-size: 24px;
+     line-height: 36px;
+     font-weight: 300;
+   
+   }
+   
+   .calendary-text span {
+     color: #000;
+     font-weight: 800;
+   }
+
+
+   
+/* cards */
+
+.about-marketers-date-card {
+    width: 254px;
+    background-color: #316bff;
+    text-align: center;
+    border-radius: 28px;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px 42px;
+    display: flex;
+    top: 19px;
+    left: 46px;
+    box-shadow: 0 4px 24px rgba(26, 28, 71, .26);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* a:hover .about-marketers-date-card,
+  a:focus .about-marketers-date-card {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  } */
+  
+  .about-marketers-day {
+    color: white;
+    letter-spacing: -.02em;
+    margin-bottom: 13px;
+    font-size: 82px;
+    font-weight: 500;
+    line-height: 1em;
+  }
+  
+  .about-marketers-month {
+    color: white;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1em;
+  }
+  
+  .about-marketers-date-text {
+    max-width: 195px;
+    color: white;
+  }
+  
+  .divider.about-marketers-card {
+    height: 2px;
+    max-width: 110px;
+    background-color: white;
+    opacity: .4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--neutral-200);
+  }
+  
+  /* WHITE */
+  
+  .about-marketers-date-card.white {
+    border: 1px solid var(--neutral-200);
+    background-color: white;
+    top: auto;
+    bottom: 12px;
+    left: auto;
+    right: 14px;
+    box-shadow: 0 6px 25px rgba(3, 8, 24, .08), 0 15px 74px rgba(49, 107, 255, .1);
+    transform: scale(1); /* Estado inicial */
+    transition: transform 0.3s ease; /* Suaviza la transición */
+  }
+  
+  .about-marketers-day._2 {
+    color: #1a2447;
+  }
+  
+  .about-marketers-month._2 {
+    color: #1a2447;
+  }
+  
+  .about-marketers-date-text._2 {
+    color: #1a2447;
+  }
+  
+  .divider.about-marketers-card.white {
+    background-color: #e6e7f3;
+    opacity: 1;
+  }
+  
+  
+  .calendary:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .calendary-end {
+      flex-direction: column;
+    }
+    .calendary-text {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+  .calendary-text {
+    text-align: center;
+  }
+    .about-marketers-date-card {
+      width: 200px;
+    }
+  }
+   
