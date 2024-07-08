@@ -10,6 +10,7 @@ import desempleo from "./assets/desempleo.jpg"
 import abuso from "./assets/abuso.jpg"
 import interior from "./assets/interior.jpg"
 import salud from "./assets/salud.jpg"
+import adicciones from "./assets/adicciones.jpg"
 
 
 import './App.css'
@@ -20,6 +21,11 @@ import { GallerySwiper } from './components/Gallery';
 
 function App() {
   const sections = [
+    {
+      image: adicciones,
+      title: "Prevención de las adicciones",
+      text: "Experiencia de Gastón Pauls con el consumo de drogas y su camino hacia la recuperación."
+    },
     {
       image: desempleo,
       title: "Una temática que afecta nuestro país como es el desempleo.",
@@ -33,7 +39,7 @@ function App() {
     {
       image: interior,
       title: "Cómo evitar que tu mundo 🌏 interior se derrumbe.",
-      text: "Cómo evitar que tu mundo 🌏 interior se derrumbe.",
+      text: "Cómo construir y mantener una fortaleza emocional.",
     },
     {
       image: salud,
@@ -41,34 +47,7 @@ function App() {
       text: "Si bien históricamente, la salud mental ha sido un tema tabú en nuestra sociedad, hoy por hoy creemos que es necesario empezar a poner en palabras cómo nos sentimos.",
     }
   ];
-  const talks = [
-    {
-      image: 'path/to/image1.jpg',
-      title: 'Charla 1',
-      description: 'Descripción de la charla 1',
-      professional: 'Profesional 1',
-      date: '2024-07-10',
-      time: '10:00 AM'
-    },
-    {
-      image: 'path/to/image2.jpg',
-      title: 'Charla 2',
-      description: 'Descripción de la charla 2',
-      professional: 'Profesional 2',
-      date: '2024-07-15',
-      time: '02:00 PM'
-    },
 
-    // Más charlas aquí
-    {
-      image: 'path/to/image3.jpg',
-      title: 'Charla Próxima',
-      description: 'Descripción de la charla próxima',
-      professional: 'Profesional 3',
-      date: '2024-07-20',
-      time: '05:00 PM'
-    }
-  ];
   const cardStyle = {
     transform: 'translate3d(3.9992px, 0.94392px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
     opacity: 1,

@@ -9,10 +9,6 @@ body {
 }
 
 
-
-
-
-
 /* calendary-end */
 
 .calendary-end {
@@ -47,6 +43,7 @@ body {
   color: #000;
   font-weight: 800;
 }
+
 /* cards */
 
 .about-marketers-date-card {
@@ -61,15 +58,15 @@ body {
   top: 19px;
   left: 46px;
   box-shadow: 0 4px 24px rgba(26, 28, 71, .26);
-  transform: scale(1); /* Estado inicial */
-  transition: transform 0.3s ease; /* Suaviza la transición */
+  transform: scale(1);
+  transition: transform 0.3s ease;
 }
 
-a:hover .about-marketers-date-card,
+/* a:hover .about-marketers-date-card,
 a:focus .about-marketers-date-card {
-  transform: scale(1.05); /* Aumenta el tamaño al 105% */
-  transition: transform 0.3s ease; /* Suaviza la transición */
-}
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+} */
 
 .about-marketers-day {
   color: white;
@@ -141,7 +138,6 @@ a:focus .about-marketers-date-card {
 }
 
 
-
 .calendary:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
@@ -153,5 +149,14 @@ a:focus .about-marketers-date-card {
   }
   .calendary-text {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+.calendary-text {
+  text-align: center;
+}
+  .about-marketers-date-card {
+    width: 200px;
   }
 }
