@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="social-icons">
             <a href="https://www.facebook.com/ProyectoSocialAlcanzate" target='_blank'><img src={facebook} className="fab fa-facebook-f" /></a>
             <a href="https://www.instagram.com/progsocialalcanzate/" target='_blank'><img src={instagram} className="fab fa-instagram" /></a>
-            <a href="https://www.whatsapp.com/?lang=es" target='_blank'><img src={wpp} className="fab fa-linkedin-in" /></a>
+            <a href="https://wa.me/59896540864?text=Hola,%20me%20quiero%20contactar%20con%20ustedes!" target='_blank'><img src={wpp} className="fab fa-linkedin-in" /></a>
           </div>
         </div>
       </div>

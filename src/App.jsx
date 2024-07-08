@@ -16,6 +16,7 @@ import './App.css'
 import Questions from './components/Questions';
 import FixImage from './components/FixImage';
 import TalkCard from './components/TalkCard';
+import { GallerySwiper } from './components/Gallery';
 
 function App() {
   const sections = [
@@ -78,13 +79,95 @@ function App() {
     <div className="App">
       <Navbar />
       <HeroSection />
+
       <About />
+
+
+
       <FixImage classStyle="fixImage" />
+
+
+      {/* <div className="talks-container">
+<p>Charlas anteriores</p>
+          <div
+            data-w-id="a7cef9e3-6264-fbff-a37c-a4f723dfe4c1"
+            style={cardStyle}
+            className="about-marketers-date-card white"
+          >
+            <div className="about-marketers-top">
+              <div className="about-marketers-day _2">06</div>
+              <div className="about-marketers-month _2">July</div>
+            </div>
+            <div className="divider about-marketers-card white"></div>
+            <div className="about-marketers-date-text _2">
+              Mentoring <br /> and Q&amp;A
+            </div>
+          </div>
+
+          <div
+            data-w-id="a7cef9e3-6264-fbff-a37c-a4f723dfe4c1"
+            style={cardStyle}
+            className="about-marketers-date-card white"
+          >
+            <div className="about-marketers-top">
+              <div className="about-marketers-day _2">06</div>
+              <div className="about-marketers-month _2">July</div>
+            </div>
+            <div className="divider about-marketers-card white"></div>
+            <div className="about-marketers-date-text _2">
+              Mentoring <br /> and Q&amp;A
+            </div>
+          </div>
+          <div
+            data-w-id="a7cef9e3-6264-fbff-a37c-a4f723dfe4c1"
+            style={cardStyle}
+            className="about-marketers-date-card white"
+          >
+            <div className="about-marketers-top">
+              <div className="about-marketers-day _2">06</div>
+              <div className="about-marketers-month _2">July</div>
+            </div>
+            <div className="divider about-marketers-card white"></div>
+            <div className="about-marketers-date-text _2">
+              Mentoring <br /> and Q&amp;A
+            </div>
+          </div>
+
+
+      </div> */}
+
       <Information />
+      <div className='calendary-end'>
+        <div className="calendary-text">
+          <h2>
+            <span>Para inscribirte a la próxima charla: </span>
+            por favor dirígete al formulario de Google y complétalo.
+          </h2>
+        </div>
+        <a className='calendary' target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLSd8esyDHD5cwU_8PcQVGQ4AdlYS9AWUJ3HwfYw0tbqPMiAsLg/viewform" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <div
+            data-w-id="eae4afbb-858b-d41e-f7a4-edbad749695c"
+            style={cardStyle}
+            className="about-marketers-date-card"
+          >
+            <div className="about-marketers-top">
+              <div className="about-marketers-day">12</div>
+              <div className="about-marketers-month">Julio</div>
+            </div>
+            <div className="divider about-marketers-card"></div>
+            <div className="about-marketers-date-text">
+              19:30hs <br /> •Adicciones: Riesgos y Esperanza•
+            </div>
+          </div>
+        </a>
+        <div>
+        </div>
+      </div>
       {/* <Features /> */}
       <ImageTextSection
         sections={sections} />
       <FixImage classStyle="fixImage-2" />
+      <GallerySwiper />
       <Questions />
       <Footer />
     </div>
