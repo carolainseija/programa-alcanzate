@@ -1,15 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./Calendary.css"
 import { fetchCalendary } from "../functions/getCalendary";
-import { useState } from "react";
 
 export default function Calendary() {
-    const [calendary, setCalendary] = useState([]);
+    const [calendary, setCalendary] = useState({});
+    const [isLoading, setIsLoading] = useState(true); // Estado de carga
 
     useEffect(() => {
         const getCalendaryData = async () => {
             const calendaryData = await fetchCalendary();
             setCalendary(calendaryData);
+            setIsLoading(false); // Terminamos la carga
         };
         getCalendaryData();
     }, []);
@@ -21,6 +22,8 @@ export default function Calendary() {
         willChange: 'transform'
     };
 
+
+
     return (
         <div className='calendary-end'>
             <div className="calendary-text">
@@ -30,20 +33,29 @@ export default function Calendary() {
                 </h2>
             </div>
             <a className='calendary' target='_blank' href={calendary.url ? calendary.url : "#"} style={{ textDecoration: 'none', color: 'inherit' }}>
-                <div
-                    data-w-id="eae4afbb-858b-d41e-f7a4-edbad749695c"
-                    style={cardStyle}
-                    className="about-marketers-date-card"
-                >
-                    <div className="about-marketers-top">
-                        <div className="about-marketers-day">{calendary.day}</div>
-                        <div className="about-marketers-month">{calendary.month}</div>
+                     <div
+                        data-w-id="eae4afbb-858b-d41e-f7a4-edbad749695c"
+                        style={cardStyle}
+                        className="about-marketers-date-card"
+                    >
+                                        {isLoading ? 
+                                        <div className="container-spinner">
+                                             <div className="spinner"></div> 
+                                            </div>
+                                        
+                                       :
+                                        <>
+                                          <div className="about-marketers-top">
+                            <div className="about-marketers-day">{calendary.day}</div>
+                            <div className="about-marketers-month">{calendary.month}</div>
+                        </div>
+                        <div className="divider about-marketers-card"></div>
+                        <div className="about-marketers-date-text">
+                            {calendary.time} hs <br /> {calendary.title}
+                        </div> </>
+
+                      }
                     </div>
-                    <div className="divider about-marketers-card"></div>
-                    <div className="about-marketers-date-text">
-                        {calendary.time} hs <br /> {calendary.title}
-                    </div>
-                </div>
             </a>
             <div>
             </div>
