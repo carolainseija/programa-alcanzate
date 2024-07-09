@@ -6,6 +6,7 @@ import { fetchTexts } from '../functions/getTexts';
 
 
 const HeroSection = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [texts, setTexts] = useState([]);
 
@@ -21,10 +22,23 @@ const HeroSection = () => {
     const getTextsData = async () => {
       const textsData = await fetchTexts();
       setTexts(textsData);
+      setIsLoading(false); // Terminamos la carga
+
     };
 
     getTextsData();
   }, []);
+
+
+  if (isLoading) {
+    return (
+      <div className="hero-container">
+        <h1>Programa Social Álcanzate</h1>
+        <div className="spinner"></div>
+      </div>
+    );
+  }
+
 
   return (
     <div className="hero-container">

@@ -68,12 +68,24 @@
 }
 
 @media screen and (max-width: 700px) {
+  .image-text-container.left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-text-container.right {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .right {
     flex-direction: column-reverse;
   }
 
   .left {
     flex-direction: column;
+    /* background-color: red; */
   }
 
   .image-text-container {
@@ -91,6 +103,7 @@
   .text-container {
     max-width: 100%;
     margin: 15px 0;
+    padding: 0px;
   }
 
   .text-container h2 {
