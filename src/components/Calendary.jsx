@@ -29,7 +29,7 @@ export default function Calendary() {
                     por favor dirígete al formulario de Google y complétalo.
                 </h2>
             </div>
-            <a className='calendary' target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLSd8esyDHD5cwU_8PcQVGQ4AdlYS9AWUJ3HwfYw0tbqPMiAsLg/viewform" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <a className='calendary' target='_blank' href={calendary.url ? calendary.url : "#"} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div
                     data-w-id="eae4afbb-858b-d41e-f7a4-edbad749695c"
                     style={cardStyle}
