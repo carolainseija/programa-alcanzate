@@ -11,11 +11,11 @@ const Questions = () => {
         }, 
         {
             question: '¿Dónde se llevan a cabo las charlas?',
-            answer: 'Nuestras charlas se realizan en diversos lugares, incluidos hoteles y centros comunitarios. Puedes consultar la ubicación específica de cada charla en nuestro calendario de eventos en el sitio web.',
+            answer: 'Nuestras charlas se realizan en diversos lugares, incluidos hoteles y centros comunitarios. Por lo general, se llevan a cabo en el Hotel Holday Inn, ubicado en Colonia 832. Puedes consultar la ubicación específica de cada charla en nuestro calendario de eventos en el sitio web.',
         }, 
         {
             question: '¿Las charlas tienen algún costo?',
-            answer: 'Algunas de nuestras charlas son gratuitas, mientras que otras pueden tener un costo de inscripción para cubrir los gastos del evento. La información sobre los costos está disponible en la descripción de cada charla en nuestro sitio web.',
+            answer: 'Nuestras charlas son totalmente gratuitas. Sin embargo, siempre aceptamos donaciones de alimentos no perecederos, que son donados a distintos centros.',
         }, 
         {
             question: '¿Puedo sugerir un tema para una futura charla?',
