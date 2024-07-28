@@ -11,7 +11,6 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="footer-top">
         <div className="footer-info">
-          {/* <h3>Propel</h3> */}
           <img className='logo-footer' src={logo} alt='logo' />
           <p>Somos un grupo de profesionales y técnicos del área de la salud y el área social que trabajamos con el fin de
             informar y concientizar sobre temas de interés de la sociedad.
@@ -20,7 +19,7 @@ const Footer = () => {
         <div className="footer-links">
           <h3>Links</h3>
           <ul>
-            <li><a href="#home">Inicio</a></li>
+            {/* <li><a href="#home">Inicio</a></li> */}
             <li><a href="#Nosotros">Nosotros</a></li>
             <li><a href="#Charlas">Charlas</a></li>
             <li><a href="#faq">Preguntas frecuentes</a></li>
