@@ -25,3 +25,9 @@
   color: #666;
   margin-bottom: 10px;
 }
+
+@media (max-width:400px){
+  .Information-container h2 {
+    font-size: 22px;
+  }
+}

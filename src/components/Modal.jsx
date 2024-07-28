@@ -1,3 +1,4 @@
+// src/components/Modal.js
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Modal.css';
@@ -8,6 +9,8 @@ const Modal = ({ isOpen, closeModal }) => {
     email: '',
     message: ''
   });
+
+  const [confirmationMessage, setConfirmationMessage] = useState('');
 
   if (!isOpen) return null;
 
@@ -25,11 +28,15 @@ const Modal = ({ isOpen, closeModal }) => {
     emailjs.sendForm('service_an7fqn8', 'template_3f8r48e', e.target, 'aCwG3r1EsKwLz0F1x')
       .then((result) => {
         console.log(result.text);
-        alert("Correo enviado con éxito");
-        closeModal();
+        setConfirmationMessage('Mensaje enviado con éxito');
+        setFormData({ name: '', email: '', message: '' }); // Limpiar el formulario
+        setTimeout(() => {
+          setConfirmationMessage('');
+          closeModal();
+        }, 3000); // Cerrar el modal después de 3 segundos
       }, (error) => {
         console.log(error.text);
-        alert("Hubo un error al enviar el correo");
+        setConfirmationMessage('Hubo un error al enviar el mensaje');
       });
   };
 
@@ -39,7 +46,7 @@ const Modal = ({ isOpen, closeModal }) => {
         <button className="close-button" onClick={closeModal}>
           &times;
         </button>
-        <h2>Conéctate</h2>
+        <h2>Comunícate con Nosotros</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Tu Nombre</label>
@@ -76,6 +83,11 @@ const Modal = ({ isOpen, closeModal }) => {
           </div>
           <button type="submit">Enviar</button>
         </form>
+        {confirmationMessage && (
+          <div className="confirmation-message">
+            {confirmationMessage}
+          </div>
+        )}
       </div>
     </div>
   );

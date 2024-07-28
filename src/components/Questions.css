@@ -41,3 +41,8 @@
     display: block;
   }
   
+  @media (max-width: 600px) {
+    .faq-container h1 {
+      font-size: 25px;
+    }
+  }

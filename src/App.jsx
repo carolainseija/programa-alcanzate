@@ -13,6 +13,7 @@ import Calendary from './components/Calendary';
 import { fetchTalks } from './functions/getTalks';
 
 import './App.css';
+import CollaboratorsList from './components/CollaboratorsList';
 
 function App() {
   const [talks, setTalks] = useState([]);
@@ -41,6 +42,7 @@ function App() {
       <FixImage classStyle="fixImage-2" />
       <GallerySwiper />
       <Questions />
+      <CollaboratorsList />
       <Footer />
     </div>
   );

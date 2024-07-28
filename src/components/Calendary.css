@@ -184,3 +184,10 @@
     width: 200px;
   }
 }
+
+
+@media (max-width: 400px) {
+  .calendary-text h2 {
+    font-size: 22px;
+  }
+}

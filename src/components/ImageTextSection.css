@@ -88,7 +88,7 @@
   }
 
   .image-text-container {
-    margin: 10px auto;
+    margin: 20px auto;
   }
 
   .image-container {
@@ -96,6 +96,7 @@
   }
 
   .image-container img {
+    max-width: 100%;
     width: 100%;
   }
 
@@ -107,9 +108,21 @@
 
   .text-container h2 {
     margin: 10px 0;
+    font-size: 25px;
+    text-align: justify;
+  }
+  .text-container p {
+    text-align: justify;
   }
 
   .image-text-section h2 {
     width: 100%;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .image-text-section h2 {
+    font-size: 22px;
   }
 }
