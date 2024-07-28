@@ -13,6 +13,7 @@
 .hero-btn {
   position: relative;
   z-index: 2;
+  font-family: 'Times New Roman', Times, serif !important;
 }
 
 .hero-container h1 {

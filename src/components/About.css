@@ -15,7 +15,6 @@
 .about-text h2 {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: 'Libre Franklin', sans-serif;
   color: #b3b3b3;
   font-size: 24px;
   line-height: 36px;
@@ -45,19 +44,15 @@
     width: 80%;
     margin: 10px auto;
     text-align: left;
-    /* margin-left: 65px; */
     font-size: 18px;
   }
   
   .about-text h2 {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: 'Libre Franklin', sans-serif;
     color: #b3b3b3;
     font-size: 18px;
-    /* line-height: 36px; */
     font-weight: 300;
-  
   }
   
   .about-text span {

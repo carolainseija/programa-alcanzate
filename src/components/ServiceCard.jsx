@@ -5,6 +5,7 @@ const ServiceCard = ({ title, description, image }) => {
   return (
     <div className="service-card">
       <div className='feature-icon'>
+        
       <img src={image} alt={title} className="card-image" />
       </div>
       <div className="card-content">

@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="footer-top">
         <div className="footer-info">
           {/* <h3>Propel</h3> */}
-          <img className='logo' src={logo} alt='logo' />
+          <img className='logo-footer' src={logo} alt='logo' />
           <p>Somos un grupo de profesionales y técnicos del área de la salud y el área social que trabajamos con el fin de
             informar y concientizar sobre temas de interés de la sociedad.
           </p>

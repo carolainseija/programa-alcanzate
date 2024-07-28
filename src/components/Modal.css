@@ -13,16 +13,16 @@
   }
   
   .modal-content {
-    background: #ffffff; /* Fondo blanco para el contenido */
+    background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     position: relative;
-    width: 60%; /* Ancho del modal */
+    width: 60%;
     max-width: 90%;
     height: 50vh;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Libre Franklin', sans-serif;
   }
   
   .close-button {

@@ -12,7 +12,7 @@ const firebaseConfig = {
   storageBucket: "iglesia-f485a.appspot.com",
   messagingSenderId: "133587183223",
   appId: "1:133587183223:web:eb597f30428dfcac3e8872",
-  measurementId: "G-SFX26TJMQN"
+  measurementId: "G-NE6BPG4CKP"
 };
 
 // Inicializa Firebase
@@ -25,4 +25,4 @@ const analytics = getAnalytics(app);
 // Inicializa Firebase Storage
 const storage = getStorage(app);
 
-export { db, storage };
+export { db, storage, analytics };

@@ -1,11 +1,4 @@
 .service-card {
-    /* width: 300px;
-    background-color: #f8f9fa;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer; */
     cursor: pointer;
     width: 280px;
     height: 300px;
@@ -14,7 +7,10 @@
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .05);
     -webkit-transition: box-shadow 200ms ease;
     transition: box-shadow 200ms ease;
+  }
 
+  .service-card:hover {
+    transform: scale(1.05);
   }
 
   .feature-icon {
@@ -29,21 +25,15 @@
 
   }
 
-  .service-card:hover {
-    transform: scale(1.05); /* Igual que: scaleX(0.7) scaleY(0.7) */
-
-  }
   .service-card h3 {
     margin-top: 0px;
     margin-bottom: 10px;
-    font-family: 'Libre Franklin', sans-serif;
     color: #000;
     font-size: 16px;
     font-weight: 600;
   }
 
   .service-card p {
-    font-family: 'IBM Plex Mono', sans-serif;
     color: #999;
     font-size: 14px;
     line-height: 24px;
@@ -67,10 +57,26 @@
     font-size: 1rem;
     color: #666;
   }
-  @media (max-width: 350px) {
+
+
+  @media (min-width: 750px) and (max-width: 1300px) {
+    .service-card {
+      height: auto;
+      padding: 20px;
+    }
+  
+  }
+
+ 
+
+  
+  @media (max-width: 400px) {
    .service-card {
     width: 80%;
     height: auto;
     padding: 30px;
    } 
+   .service-card:hover {
+    transform: none;
+  }
   }
