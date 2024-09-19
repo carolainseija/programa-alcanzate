@@ -27,7 +27,8 @@ function App() {
     getTalksData();
   }, []);
 
-
+// npm run build
+// firebase deploy
 
 
   return (
@@ -36,6 +37,10 @@ function App() {
       <HeroSection />
       <About />
       <FixImage classStyle="fixImage" />
+      {/* <p>Rompiendo el Silencio</p> */}
+      <div>
+        {/* <video */}
+      </div>
       <Information />
       <Calendary />
       <ImageTextSection talks={talks} />

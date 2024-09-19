@@ -43,6 +43,8 @@ const HeroSection = () => {
   return (
     <div className="hero-container">
       <h1>{texts.title}</h1>
+      {/* <p>Únete como profesional o escucha</p> */}
+      {/* <p>Generamos conversaciones que transforman vidas</p> */}
       <p>{texts.subtitle}</p>
       <button className="hero-btn" onClick={openModal}>Contactanos</button>
       <Modal isOpen={isModalOpen} closeModal={closeModal} />
